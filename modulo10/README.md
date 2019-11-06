@@ -1,7 +1,7 @@
 Etapas do projeto:
 
 [x] __Configurando__ estrutura
-[ ] __Configurando__ Root Import
+[x] __Configurando__ Root Import
 [ ] Rotas de autenticação
 [ ] __Configurando__ background
 [ ] Input & Button
@@ -33,7 +33,6 @@ Ver videos | Codar | Documentar| Revisar
 -----------|-------|-----------|---------
 :clock10:| :clock10:|:clock10:|:clock10:
 
-
 ### Inicializando o projeto
 
 - 1 Criar um projeto em _React-Native_: `react-native init modulo10`
@@ -64,7 +63,9 @@ Ver videos | Codar | Documentar| Revisar
 
     yarn add reactotron-react-native
   ```
+
 ---
+
 Configurar o projeto para que, nas importações, se acesse as pastas a partir da raiz do projeto diretamente:
 - 1 Instalar dependências : `yarn add babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import -D`
 - 2 Adcionar plugin ao `babel.config.js`
@@ -90,7 +91,6 @@ Configurar o projeto para que, nas importações, se acesse as pastas a partir d
     }
   }
   ```
-
-
+---
 
 
