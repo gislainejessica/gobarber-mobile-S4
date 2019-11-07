@@ -7,9 +7,9 @@ Etapas do projeto:
 [x] Input & Button
 [x] Página SignIn
 [x] Página SignUp
-[ ] __Configurando__ StatusBar
-[ ] Dicas de acessibilidade
-[ ] Reactotron
+[x] __Configurando__ StatusBar
+[x] Dicas de acessibilidade
+[x] Reactotron
 [ ] __Configurando__ Redux
 [ ] Conectando Redux
 [ ] Rota inicial
@@ -61,7 +61,8 @@ Ver videos | Codar | Documentar| Revisar
               babel-eslint
           eslint-plugin-react-hooks -D
 
-    yarn add reactotron-react-native
+    yarn add reactotron-react-native reactotron-redux reactotron-redux-saga
+    yarn add redux react-redux redux-saga
   ```
 
 ---
