@@ -2,7 +2,7 @@ Etapas do projeto:
 
 [x] __Configurando__ estrutura
 [x] __Configurando__ Root Import
-[ ] Rotas de autenticação
+[x] Rotas de autenticação
 [ ] __Configurando__ background
 [ ] Input & Button
 [ ] Página SignIn
@@ -92,5 +92,16 @@ Configurar o projeto para que, nas importações, se acesse as pastas a partir d
   }
   ```
 ---
+## Configurando a navegação do projeto
+
+[React-Navigation Start](https://reactnavigation.org/docs/en/getting-started.html)
+
+- 1 Instalando a biblioteca que vamos usar para fazer a navegação
+  - `yarn add react-navigation`
+
+- 2 Instalando dependências para que o _React-Navigation_ funcione 100%
+  - `yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23`
+
+- 3 Fazer as configurações para android nos arquivos _build.gradle_ e _MainActivity.java_, seguindo a   documentação do site
 
 
