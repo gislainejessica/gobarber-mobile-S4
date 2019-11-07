@@ -104,4 +104,14 @@ Configurar o projeto para que, nas importações, se acesse as pastas a partir d
 
 - 3 Fazer as configurações para android nos arquivos _build.gradle_ e _MainActivity.java_, seguindo a   documentação do site
 
+---
+## Configurando Background da aplicação
+
+- 1 Instalando a biblioteca para gerar um background em forma de [gradiente](https://github.com/react-native-community/react-native-linear-gradient)
+  - `yarn add react-native-linear-gradient`
+
+- 2 Instalando o styled-components
+  - yarn add styled-components
+
+---
 
