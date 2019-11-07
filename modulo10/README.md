@@ -6,7 +6,7 @@ Etapas do projeto:
 [x] __Configurando__ background
 [x] Input & Button
 [x] Página SignIn
-[ ] Página SignUp
+[x] Página SignUp
 [ ] __Configurando__ StatusBar
 [ ] Dicas de acessibilidade
 [ ] Reactotron
