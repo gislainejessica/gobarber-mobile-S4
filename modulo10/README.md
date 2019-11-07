@@ -3,9 +3,9 @@ Etapas do projeto:
 [x] __Configurando__ estrutura
 [x] __Configurando__ Root Import
 [x] Rotas de autenticação
-[ ] __Configurando__ background
-[ ] Input & Button
-[ ] Página SignIn
+[x] __Configurando__ background
+[x] Input & Button
+[x] Página SignIn
 [ ] Página SignUp
 [ ] __Configurando__ StatusBar
 [ ] Dicas de acessibilidade
@@ -101,25 +101,10 @@ Configurar o projeto para que, nas importações, se acesse as pastas a partir d
 
 - 2 Instalando dependências para que o _React-Navigation_ funcione 100%
   - `yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23`
+- 3 Fazer as configurações para android nos arquivos _build.gradle_ e _MainActivity.java_, seguindo a documentação do site
 
-- 3 Fazer as configurações para android nos arquivos _build.gradle_ e _MainActivity.java_, seguindo a   documentação do site
-
----
-## Configurando Background da aplicação
-
-- 1 Instalando a biblioteca para gerar um background em forma de [gradiente](https://github.com/react-native-community/react-native-linear-gradient)
-  - `yarn add react-native-linear-gradient`
-
-- 2 Instalando o styled-components
-  - `yarn add styled-components`
+- 4 Reinstalar o App, pois mexeu em codigo que trabalha com nativo
 
 ---
-## Componentes Input e Button
-Criar componentes globais que serão usados em varios locais da aplicação, por terem um funcionamento que estilos que poderão ser aplicados em difrentes partes da aplicação, então pra não ficar repetindo código e como sabemos que vamos precisar da estrutura desses compoentes em varios locais diferentes, vamos isolar para poder usar quando necessário.
 
 
-- `yarn add prop-types`
-
-### Colocar [icones](https://github.com/oblador/react-native-vector-icons#android) no apllicativo
-
-- `yarn add react-native-vector-icons`

@@ -6,5 +6,5 @@ import Routes from './routes'
 // import { Container } from './styles';
 
 export default function src() {
-  return <Routes/>
+  return <Routes />
 }
