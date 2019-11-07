@@ -111,7 +111,15 @@ Configurar o projeto para que, nas importações, se acesse as pastas a partir d
   - `yarn add react-native-linear-gradient`
 
 - 2 Instalando o styled-components
-  - yarn add styled-components
+  - `yarn add styled-components`
 
 ---
+## Componentes Input e Button
+Criar componentes globais que serão usados em varios locais da aplicação, por terem um funcionamento que estilos que poderão ser aplicados em difrentes partes da aplicação, então pra não ficar repetindo código e como sabemos que vamos precisar da estrutura desses compoentes em varios locais diferentes, vamos isolar para poder usar quando necessário.
 
+
+- `yarn add prop-types`
+
+### Colocar [icones](https://github.com/oblador/react-native-vector-icons#android) no apllicativo
+
+- `yarn add react-native-vector-icons`
