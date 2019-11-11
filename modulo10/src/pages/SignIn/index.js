@@ -1,6 +1,9 @@
 import React, { useRef } from 'react'
 import { Image } from 'react-native'
+import { useDispatch } from 'react-redux'
 import Background from '~/components/Background'
+
+import { signInRequest } from '~/store/modules/auth/actions'
 
 import logo from '~/assets/logo.png'
 import {
@@ -14,8 +17,12 @@ import {
 
 export default function SignIn({ navigation }) {
   const passWordRef = useRef()
+  const dispatch = useDispatch()
 
-  function handleSubmit() {}
+  function handleSubmit({ email, password }) {
+    dispatch(signInRequest(email, password))
+  }
+
   return (
     <Background>
       <Container>

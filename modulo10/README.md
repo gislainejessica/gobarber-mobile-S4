@@ -108,4 +108,6 @@ Configurar o projeto para que, nas importações, se acesse as pastas a partir d
 
 ---
 
-
+## Configuração do Redux
+- `yarn add immer redux-persist redux react-redux redux-saga`
+- `yarn add axios`
