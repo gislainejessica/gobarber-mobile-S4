@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { Image } from 'react-native'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import Background from '~/components/Background'
 
 import { signInRequest } from '~/store/modules/auth/actions'
@@ -19,7 +19,12 @@ export default function SignIn({ navigation }) {
   const passWordRef = useRef()
   const dispatch = useDispatch()
 
-  function handleSubmit({ email, password }) {
+  const [email, setEmail] = useState('teste')
+  const [password, setPassword] = useState('teste')
+
+  const loading = useSelector(state => state.auth.loading)
+
+  function handleSubmit() {
     dispatch(signInRequest(email, password))
   }
 
@@ -36,6 +41,8 @@ export default function SignIn({ navigation }) {
             placeholder="Digite seu email"
             returnKeyType="next"
             onSubmitEditing={() => passWordRef.current.focus()}
+            value={email}
+            onChangeText={setEmail}
           />
           <FormInput
             icon="lock-outline"
@@ -44,9 +51,13 @@ export default function SignIn({ navigation }) {
             placeholder="Sua senha secreta"
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
+            value={password}
+            onChangeText={setPassword}
           />
 
-          <SubmitButton onPress={handleSubmit}> Acessar </SubmitButton>
+          <SubmitButton loading={loading} onPress={handleSubmit}>
+            Acessar
+          </SubmitButton>
         </Form>
 
         <SignLink onPress={() => navigation.navigate('SingUp')}>

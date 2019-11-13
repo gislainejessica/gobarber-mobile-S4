@@ -1,14 +1,14 @@
-export function updateProfileRequest(name, email, senha) {
+export function updateProfileRequest(data) {
   return {
     type: '@user/UPDATE_PROFILE_REQUEST',
-    payload: { name, email, senha }
+    payload: { data }
   }
 }
 
-export function updateProfileSuccess() {
+export function updateProfileSuccess(profile) {
   return {
     type: '@user/UPDATE_PROFILE_SUCCESS',
-    payload: {}
+    payload: { profile }
   }
 }
 
