@@ -11,9 +11,8 @@ export function* signIn({ payload }) {
       email,
       password
     })
-
-    const { token, user } = response.data
     console.tron.log(response.data)
+    const { token, user } = response.data
 
     if (user.provider) {
       Alert.alert('Erro na Login', 'Usuario não pode ser prestador de serviços')

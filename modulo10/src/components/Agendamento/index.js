@@ -20,8 +20,8 @@ export default function Agendamento({ data, onCancel }) {
         <Avatar
           source={{
             uri: data.provider.avatar
-              ? `https://api.adorable.io/avatars/50/abott@adorable.pngCopy` // data.provider.avatar.url
-              : `https://api.adorable.io/avatars/50/abott@adorable.pngCopy`
+              ? data.provider.avatar.url.replace('localhost', '192.168.15.9') // data.provider.avatar.url
+              : `https://api.adorable.io/avatars/50/${data.provider.name}.pngCopy`
           }}
         />
         <Info>
