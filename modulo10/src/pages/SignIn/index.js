@@ -19,8 +19,8 @@ export default function SignIn({ navigation }) {
   const passWordRef = useRef()
   const dispatch = useDispatch()
 
-  const [email, setEmail] = useState('teste')
-  const [password, setPassword] = useState('teste')
+  const [email, setEmail] = useState('cliente@email.com')
+  const [password, setPassword] = useState('123456')
 
   const loading = useSelector(state => state.auth.loading)
 

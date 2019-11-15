@@ -13,15 +13,16 @@ export function* signIn({ payload }) {
     })
 
     const { token, user } = response.data
+    console.tron.log(response.data)
 
     if (user.provider) {
       Alert.alert('Erro na Login', 'Usuario não pode ser prestador de serviços')
+      // yield put(signFailure())
       return
     }
     api.defaults.headers.Authorization = `Bearer ${token}`
     yield delay(3000)
     yield put(signSuccess(token, user))
-    // history.push('/dashboard')
   } catch (error) {
     Alert.alert(
       'Falha na autenticação',
@@ -39,7 +40,6 @@ export function* signUp({ payload }) {
       email,
       password
     })
-    // history.push('/')
   } catch (error) {
     Alert.alert(
       'Falha no cadastro',
